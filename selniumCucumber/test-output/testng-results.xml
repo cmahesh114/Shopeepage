@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-30T05:58:26Z" name="Default suite" finished-at="2023-08-30T05:58:26Z" duration-ms="285">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.shopeeRunner@4b41dd5c]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-08-30T05:58:26Z" name="Default test" finished-at="2023-08-30T05:58:26Z" duration-ms="285">
+      <class name="testRunner.shopeeRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:testRunner.shopeeRunner@4b41dd5c]" started-at="2023-08-30T05:58:26Z" name="setUpClass" finished-at="2023-08-30T05:58:26Z" duration-ms="85" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.shopeeRunner@4b41dd5c]" started-at="2023-08-30T05:58:26Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-30T05:58:26Z" duration-ms="124" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Opens the page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Flipkart application"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="cucumber.runtime.DuplicateStepDefinitionException">
+            <message>
+              <![CDATA[Duplicate step definitions in steps.StepstoLogin.user_should_navigate_to_the_application() in file:/D:/Selenium/selniumCucumber/target/test-classes/ and steps.Shopeepage.user_should_navigate_to_the_application() in file:/D:/Selenium/selniumCucumber/target/test-classes/]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.runtime.DuplicateStepDefinitionException: Duplicate step definitions in steps.StepstoLogin.user_should_navigate_to_the_application() in file:/D:/Selenium/selniumCucumber/target/test-classes/ and steps.Shopeepage.user_should_navigate_to_the_application() in file:/D:/Selenium/selniumCucumber/target/test-classes/
+at cucumber.runner.Glue.addStepDefinition(Glue.java:30)
+at cucumber.runtime.java.JavaBackend.addStepDefinition(JavaBackend.java:142)
+at cucumber.runtime.java.MethodScanner.scan(MethodScanner.java:65)
+at cucumber.runtime.java.MethodScanner.scan(MethodScanner.java:42)
+at cucumber.runtime.java.JavaBackend.loadGlue(JavaBackend.java:82)
+at cucumber.runner.Runner.<init>(Runner.java:28)
+at cucumber.runner.ThreadLocalRunnerSupplier.createRunner(ThreadLocalRunnerSupplier.java:42)
+at cucumber.runner.ThreadLocalRunnerSupplier.access$000(ThreadLocalRunnerSupplier.java:13)
+at cucumber.runner.ThreadLocalRunnerSupplier$1.initialValue(ThreadLocalRunnerSupplier.java:22)
+at cucumber.runner.ThreadLocalRunnerSupplier$1.initialValue(ThreadLocalRunnerSupplier.java:19)
+at java.base/java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:195)
+at java.base/java.lang.ThreadLocal.get(ThreadLocal.java:172)
+at cucumber.runner.ThreadLocalRunnerSupplier.get(ThreadLocalRunnerSupplier.java:38)
+at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:63)
+at cucumber.api.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:22)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- cucumber.runtime.DuplicateStepDefinitionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.shopeeRunner@4b41dd5c]" started-at="2023-08-30T05:58:26Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-30T05:58:26Z" duration-ms="15" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["NotOpens the page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Flipkart application"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="cucumber.runtime.DuplicateStepDefinitionException">
+            <message>
+              <![CDATA[Duplicate step definitions in steps.StepstoLogin.user_should_navigate_to_the_application() in file:/D:/Selenium/selniumCucumber/target/test-classes/ and steps.Shopeepage.user_should_navigate_to_the_application() in file:/D:/Selenium/selniumCucumber/target/test-classes/]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.runtime.DuplicateStepDefinitionException: Duplicate step definitions in steps.StepstoLogin.user_should_navigate_to_the_application() in file:/D:/Selenium/selniumCucumber/target/test-classes/ and steps.Shopeepage.user_should_navigate_to_the_application() in file:/D:/Selenium/selniumCucumber/target/test-classes/
+at cucumber.runner.Glue.addStepDefinition(Glue.java:30)
+at cucumber.runtime.java.JavaBackend.addStepDefinition(JavaBackend.java:142)
+at cucumber.runtime.java.MethodScanner.scan(MethodScanner.java:65)
+at cucumber.runtime.java.MethodScanner.scan(MethodScanner.java:42)
+at cucumber.runtime.java.JavaBackend.loadGlue(JavaBackend.java:82)
+at cucumber.runner.Runner.<init>(Runner.java:28)
+at cucumber.runner.ThreadLocalRunnerSupplier.createRunner(ThreadLocalRunnerSupplier.java:42)
+at cucumber.runner.ThreadLocalRunnerSupplier.access$000(ThreadLocalRunnerSupplier.java:13)
+at cucumber.runner.ThreadLocalRunnerSupplier$1.initialValue(ThreadLocalRunnerSupplier.java:22)
+at cucumber.runner.ThreadLocalRunnerSupplier$1.initialValue(ThreadLocalRunnerSupplier.java:19)
+at java.base/java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:195)
+at java.base/java.lang.ThreadLocal.get(ThreadLocal.java:172)
+at cucumber.runner.ThreadLocalRunnerSupplier.get(ThreadLocalRunnerSupplier.java:38)
+at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:63)
+at cucumber.api.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:22)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- cucumber.runtime.DuplicateStepDefinitionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.shopeeRunner@4b41dd5c]" started-at="2023-08-30T05:58:26Z" name="tearDownClass" finished-at="2023-08-30T05:58:26Z" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunner.shopeeRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
